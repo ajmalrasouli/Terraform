@@ -1,4 +1,13 @@
 terraform {
+  cloud {
+    organization = "Ajmaltech"
+    workspaces {
+      name = "learn-tfc-aws"
+    }
+  }
+}
+
+terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
